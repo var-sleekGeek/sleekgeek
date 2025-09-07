@@ -1,0 +1,267 @@
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+#ceo {
+  display: block;
+  margin: auto;
+  padding-top: .8rem;
+  width: 47%;
+  height: auto;  
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #662D91, #32cd32);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 2px #00ffff;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header */
+
+#banner {
+  margin-top: 3rem;
+}
+
+/* Nav Bar*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #162c38;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  height: 3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 17px;
+  border-radius: 100%;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.nav-links {
+  display: flex;
+  background: linear-gradient(to right, #32cd32, #783ea4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  background: linear-gradient(to right, #783ea4, #32cd32);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  -webkit-text-fill-color: lightgreen; 
+}
+
+.logo:hover {
+  font-weight: bold;
+  -webkit-text-fill-color: lightgreen; 
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: white;
+  height: 3px;
+  margin: 2.5px 0;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    height: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Banner Lights */
+
+#Light1 {
+    animation: move1 6s linear infinite;
+    transform-origin: 105px 300px;
+}
+
+#Light2 {
+    animation: move2 5s linear infinite;
+    transform-origin: 455px 300px;
+}
+
+@keyframes move1 {
+    0% {
+        transform: rotate(0deg)
+    }
+    10% {
+        transform: rotate(-10deg)
+    }
+    20% {
+        transform: rotate(-20deg)
+    }
+    30% {
+        transform: rotate(-10deg)
+    }
+    40% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(10deg)
+    }
+    60% {
+        transform: rotate(20deg)
+    }
+    70% {
+        transform: rotate(30deg)
+    }
+    80% {
+        transform: rotate(20deg)
+    }
+    90% {
+        transform: rotate(10deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: rotate(0deg)
+    }
+    10% {
+        transform: rotate(-10deg)
+    }
+    20% {
+        transform: rotate(-20deg)
+    }
+    30% {
+        transform: rotate(-30deg)
+    }
+    40% {
+        transform: rotate(-20deg)
+    }
+    50% {
+        transform: rotate(-10deg)
+    }
+    60% {
+        transform: rotate(0deg)
+    }
+    70% {
+        transform: rotate(10deg)
+    }
+    80% {
+        transform: rotate(20deg)
+    }
+    90% {
+        transform: rotate(10deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+/* INDEX PAGE */
+
+.intro { 
+    grid-area: intro; 
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 1em;
+    text-shadow: 0px 0px 2px black, 2px 2px 5px white;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Featured Work */
+
+#daycare {
+  padding: 40px;
+}
+
+#contracting {
+  padding: 40px;
+}
+
+#azul {
+  padding: 40px;
+}
+
+/* #daycareContent {
+  z-index: 1;
+} */

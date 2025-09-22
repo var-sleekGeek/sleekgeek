@@ -5943,13 +5943,15 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project 1 -->
                     <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 card-hover fade-in">
-                        <div class="h-100 bg-gradient-to-r from-purple-600 to-blue-600 flex items-center justify-center">
+                        <div
+                            class="h-100 bg-gradient-to-r from-purple-600 to-blue-600 flex items-center justify-center">
                             <!-- <i class="fas fa-laptop-code text-6xl text-white opacity-80"></i> -->
-                             <img id="daycare" src="/images/daycare-home-page.png" alt="Daycare Home page">
+                            <img id="daycare" src="/images/daycare-home-page.png" alt="Daycare Home page">
                         </div>
                         <div id="daycareContent" class="p-9">
                             <h3 class="text-xl font-bold mb-2">Daycare Website</h3>
-                            <p class="text-gray-400 mb-4">A full-featured website with custom designs, SEO comliant and user sign-in
+                            <p class="text-gray-400 mb-4">A full-featured website with custom designs, SEO comliant and
+                                user sign-in
                                 integration.</p>
                             <!-- <div class="flex flex-wrap gap-2">
                                 <span class="text-xs bg-gray-800 text-cyan-400 px-3 py-1 rounded-full">HTML</span>
@@ -5963,11 +5965,12 @@
                     <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 card-hover fade-in">
                         <div class="h-100 bg-gradient-to-r from-green-600 to-teal-600 flex items-center justify-center">
                             <!-- <i class="fas fa-mobile-alt text-6xl text-white opacity-80"></i> -->
-                             <img id="contracting" src="/images/general-contracting-home-page.png" alt="">
+                            <img id="contracting" src="/images/general-contracting-home-page.png" alt="">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">General Contracting Website</h3>
-                            <p class="text-gray-400 mb-4">Mobile friendly, SEO compliant General Contracting Website. Fast &amp; reliable with the user kept in mind.</p>
+                            <p class="text-gray-400 mb-4">Mobile friendly, SEO compliant General Contracting Website.
+                                Fast &amp; reliable with the user kept in mind.</p>
                             <!-- <div class="flex flex-wrap gap-2">
                                 <span class="text-xs bg-gray-800 text-cyan-400 px-3 py-1 rounded-full">Flutter</span>
                                 <span class="text-xs bg-gray-800 text-cyan-400 px-3 py-1 rounded-full">Firebase</span>
@@ -5978,13 +5981,15 @@
 
                     <!-- Project 3 -->
                     <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 card-hover fade-in">
-                        <div class="h-100 bg-gradient-to-r from-orange-600 to-pink-600 flex items-center justify-center">
+                        <div
+                            class="h-100 bg-gradient-to-r from-orange-600 to-pink-600 flex items-center justify-center">
                             <!-- <i class="fas fa-chart-line text-6xl text-white opacity-80"></i> -->
-                             <img id="azul" src="/images/azul-home-page.jpg" alt="">
+                            <img id="azul" src="/images/azul-home-page.jpg" alt="">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Azul - Wall of Fame</h3>
-                            <p class="text-gray-400 mb-4">A sports wall of fame showcasing the history of all candidates of the hall of fame. Elegant designs, SEO compliant &amp; fully accessible.
+                            <p class="text-gray-400 mb-4">A sports wall of fame showcasing the history of all candidates
+                                of the hall of fame. Elegant designs, SEO compliant &amp; fully accessible.
                             </p>
                             <!-- <div class="flex flex-wrap gap-2">
                                 <span class="text-xs bg-gray-800 text-cyan-400 px-3 py-1 rounded-full">Vue.js</span>
@@ -6200,19 +6205,24 @@
                     </div>
 
                     <div class="bg-gray-800 rounded-xl p-8 md:p-12 border border-gray-700 fade-in">
-                        <form id="contactForm" class="space-y-6" action="mailto:franklin@sleekgeek.ca" method="post">
+                        <form id="contactForm" class="space-y-6"
+                            action="https://formsubmit.co/your@franklin@sleekgeek.ca" method="post">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="name" class="block text-gray-300 mb-2">Full Name</label>
                                     <input type="text" id="name" name="name"
                                         class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
-                                        placeholder="John Doe" required>
+                                        placeholder="John Doe" required><span id="nameError"
+                                        class="text-red-500 text-sm mt-1 block"></span>
+
                                 </div>
                                 <div>
                                     <label for="email" class="block text-gray-300 mb-2">Email Address</label>
                                     <input type="email" id="email" name="email"
                                         class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
-                                        placeholder="john@example.com" required>
+                                        placeholder="john@example.com" required><span id="emailError"
+                                        class="text-red-500 text-sm mt-1 block"></span>
+
                                 </div>
                             </div>
 
@@ -6227,12 +6237,13 @@
                                     <option value="design">UI/UX Design</option>
                                     <option value="consultation">Consultation</option>
                                     <option value="other">Other</option>
-                                </select>
+                                </select><span id="serviceError" class="text-red-500 text-sm mt-1 block"></span>
+
                             </div>
 
                             <div>
                                 <label for="budget" class="block text-gray-300 mb-2">Project Budget</label>
-                                <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                                     <div>
                                         <input type="radio" name="budget" id="budget0" value="under1k"
                                             class="hidden peer" required>
@@ -6273,13 +6284,15 @@
                                         </label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="budget" id="budget5" value="Unknown/TBD" class="hidden peer">
+                                        <input type="radio" name="budget" id="budget5" value="Unknown/TBD"
+                                            class="hidden peer">
                                         <label for="budget5"
                                             class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300">
                                             Unknown/TBD
                                         </label>
                                     </div>
-                                </div>
+                                </div><span id="budgetError" class="text-red-500 text-sm mt-1 block"></span>
+
                             </div>
 
                             <div>
@@ -6287,12 +6300,15 @@
                                 <textarea id="message" rows="5" name="details"
                                     class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
                                     placeholder="Tell me about your project..." required></textarea>
+                                <span id="messageError" class="text-red-500 text-sm mt-1 block"></span>
+
                             </div>
 
                             <div class="flex items-center">
                                 <input type="checkbox" id="agree" name="agreement"
                                     class="w-4 h-4 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
-                                    required>
+                                    required><span id="agreeError" class="text-red-500 text-sm mt-1 block"></span>
+
                                 <label for="agree" class="ml-2 text-sm text-gray-300">I agree to the <a
                                         href="/privacy.html" class="text-cyan-400 hover:underline">privacy
                                         policy</a></label>

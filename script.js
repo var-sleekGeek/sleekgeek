@@ -35,6 +35,57 @@ const observer = new IntersectionObserver((entries) => {
 fadeElements.forEach(element => {
   observer.observe(element);
 });
+// Form Validation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const serviceSelect = document.getElementById("service");
+    const messageInput = document.getElementById("message");
+    const agreeCheckbox = document.getElementById("agree");
+
+    nameInput.addEventListener("input", () => {
+        const error = document.getElementById("nameError");
+        if (nameInput.value.trim() === "") {
+            error.textContent = "Name is required.";
+        } else {
+            error.textContent = "";
+        }
+    });
+
+    emailInput.addEventListener("input", () => {
+        const error = document.getElementById("emailError");
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value.trim())) {
+            error.textContent = "Enter a valid email.";
+        } else {
+            error.textContent = "";
+        }
+    });
+
+    serviceSelect.addEventListener("change", () => {
+        const error = document.getElementById("serviceError");
+        if (serviceSelect.value === "") {
+            error.textContent = "Please select a service.";
+        } else {
+            error.textContent = "";
+        }
+    });
+
+    messageInput.addEventListener("input", () => {
+        const error = document.getElementById("messageError");
+        if (messageInput.value.trim() === "") {
+            error.textContent = "Project details are required.";
+        } else {
+            error.textContent = "";
+        }
+    });
+
+    agreeCheckbox.addEventListener("change", () => {
+        const error = document.getElementById("agreeError");
+        error.textContent = agreeCheckbox.checked ? "" : "You must agree to the privacy policy.";
+    });
+});
 
 // Form submission
 const contactForm = document.getElementById('contactForm');

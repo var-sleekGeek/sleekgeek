@@ -24,7 +24,7 @@
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#services">Services</a>
             <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="/community.html">Socials</a>
+            <!-- <a class="nav-link" href="/community.html">Socials</a> -->
         </div>
     </nav>
 
@@ -6204,13 +6204,13 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="name" class="block text-gray-300 mb-2">Full Name</label>
-                                    <input type="text" id="name"
+                                    <input type="text" id="name" name="name"
                                         class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
                                         placeholder="John Doe" required>
                                 </div>
                                 <div>
                                     <label for="email" class="block text-gray-300 mb-2">Email Address</label>
-                                    <input type="email" id="email"
+                                    <input type="email" id="email" name="email"
                                         class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
                                         placeholder="john@example.com" required>
                                 </div>
@@ -6218,7 +6218,7 @@
 
                             <div>
                                 <label for="service" class="block text-gray-300 mb-2">Service Needed</label>
-                                <select id="service"
+                                <select id="service" name="service"
                                     class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
                                     required>
                                     <option value="" disabled selected>Select a service</option>
@@ -6272,18 +6272,25 @@
                                             $20k+
                                         </label>
                                     </div>
+                                    <div>
+                                        <input type="radio" name="budget" id="budget5" value="Unknown/TBD" class="hidden peer">
+                                        <label for="budget5"
+                                            class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300">
+                                            Unknown/TBD
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
                             <div>
                                 <label for="message" class="block text-gray-300 mb-2">Project Details</label>
-                                <textarea id="message" rows="5"
+                                <textarea id="message" rows="5" name="details"
                                     class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
                                     placeholder="Tell me about your project..." required></textarea>
                             </div>
 
                             <div class="flex items-center">
-                                <input type="checkbox" id="agree"
+                                <input type="checkbox" id="agree" name="agreement"
                                     class="w-4 h-4 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
                                     required>
                                 <label for="agree" class="ml-2 text-sm text-gray-300">I agree to the <a

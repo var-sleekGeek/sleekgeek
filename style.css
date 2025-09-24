@@ -55,14 +55,39 @@
 
 /* Header */
 
+.header {
+  position: relative;
+  width: 100%;
+  height: auto; /* or whatever height your banner needs */
+  overflow: hidden;
+}
+
 #banner {
   margin-top: 3rem;
 }
 
+#Paul_Banner {
+  position: relative;
+  width: 100%;
+  z-index: 1;    /* sits below the image */
+  /* padding: 40px; */
+}
+
+/* .image-container { */
+  /* display: flex; */
+  /*align-items: flex-start;  Align image to top */
+  /*justify-content: flex-start;  Align image to left */
+  /*height: 100vh;  Full screen height */
+  /* padding: 2vw; */
+/* } */
+
 #logo {
   position: absolute;
-  margin-left: 10rem;
-  margin-top: 3rem;
+  top: 80px;     /* adjust as needed */
+  left: 200px;    /* adjust as needed */
+  width: 22vw;   /* responsive scaling */
+  height: auto;
+  z-index: 2;    /* ensures it sits above the banner content */
 }
 
 /* Nav Bar*/

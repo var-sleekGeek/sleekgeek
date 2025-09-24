@@ -59,6 +59,12 @@
   margin-top: 3rem;
 }
 
+#logo {
+  position: absolute;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
 /* Nav Bar*/
 
 .navbar {
@@ -145,6 +151,7 @@
 #Light1 {
     animation: move1 6s linear infinite;
     transform-origin: 105px 300px;
+    z-index: 99;
 }
 
 #Light2 {

@@ -18,23 +18,6 @@ function toggleMenu() {
       navLinks.classList.toggle('active');
     }
 
-
-// Intersection Observer for fade-in animations
-const fadeElements = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.1
-});
-
-fadeElements.forEach(element => {
-  observer.observe(element);
-});
 // Form Validation
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -95,13 +78,13 @@ contactForm.addEventListener('submit', (e) => {
 
   // Get form values
   const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const service = document.getElementById('service').value;
-  const budget = document.querySelector('input[name="budget"]:checked').value;
-  const message = document.getElementById('message').value;
+  // const email = document.getElementById('email').value;
+  // const service = document.getElementById('service').value;
+  // const budget = document.querySelector('input[name="budget"]:checked').value;
+  // const message = document.getElementById('message').value;
 
-  // Here you would typically send this data to a server
-  console.log({ name, email, service, budget, message });
+  // // Here you would typically send this data to a server
+  // console.log({ name, email, service, budget, message });
 
   // Show success message
   alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
@@ -128,5 +111,6 @@ const fadeIns = document.querySelectorAll('.fade-in');
 let delay = 0;
 fadeIns.forEach((element) => {
   element.style.animationDelay = delay + 's';
-  delay += 0.05; // Adjust the delay between each letter
+  delay += 0.07; // Adjust the delay between each letter
 });
+

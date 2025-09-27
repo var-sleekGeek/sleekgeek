@@ -32,7 +32,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #662D91, #32cd32);
+  background: linear-gradient(90deg, #662d91, #32cd32);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -69,25 +69,6 @@
 #Paul_Banner {
   position: relative;
   width: 100%;
-  z-index: 1;    /* sits below the image */
-  /* padding: 40px; */
-}
-
-/* .image-container { */
-  /* display: flex; */
-  /*align-items: flex-start;  Align image to top */
-  /*justify-content: flex-start;  Align image to left */
-  /*height: 100vh;  Full screen height */
-  /* padding: 2vw; */
-/* } */
-
-#logo {
-  position: absolute;
-  top: 80px;     /* adjust as needed */
-  left: 200px;    /* adjust as needed */
-  width: 22vw;   /* responsive scaling */
-  height: auto;
-  z-index: 2;    /* ensures it sits above the banner content */
 }
 
 /* Nav Bar*/
@@ -186,73 +167,73 @@
 
 @keyframes move1 {
     0% {
-        transform: rotate(0deg)
+        transform: rotate(10deg)
     }
     10% {
-        transform: rotate(-10deg)
+        transform: rotate(0deg)
     }
     20% {
-        transform: rotate(-20deg)
-    }
-    30% {
         transform: rotate(-10deg)
     }
-    40% {
+    30% {
         transform: rotate(0deg)
+    }
+    40% {
+        transform: rotate(10deg)
     }
     50% {
-        transform: rotate(10deg)
+        transform: rotate(20deg)
     }
     60% {
-        transform: rotate(20deg)
-    }
-    70% {
         transform: rotate(30deg)
     }
+    70% {
+        transform: rotate(40deg)
+    }
     80% {
-        transform: rotate(20deg)
+        transform: rotate(30deg)
     }
     90% {
-        transform: rotate(10deg)
+        transform: rotate(20deg)
     }
     100% {
-        transform: rotate(0deg)
+        transform: rotate(10deg)
     }
 }
 
 @keyframes move2 {
     0% {
-        transform: rotate(0deg)
+        transform: rotate(-10deg)
     }
     10% {
-        transform: rotate(-10deg)
+        transform: rotate(-20deg)
     }
     20% {
-        transform: rotate(-20deg)
-    }
-    30% {
         transform: rotate(-30deg)
     }
+    30% {
+        transform: rotate(-40deg)
+    }
     40% {
-        transform: rotate(-20deg)
+        transform: rotate(-30deg)
     }
     50% {
-        transform: rotate(-10deg)
+        transform: rotate(-20deg)
     }
     60% {
-        transform: rotate(0deg)
+        transform: rotate(-10deg)
     }
     70% {
-        transform: rotate(10deg)
+        transform: rotate(0deg)
     }
     80% {
-        transform: rotate(20deg)
-    }
-    90% {
         transform: rotate(10deg)
     }
-    100% {
+    90% {
         transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(-10deg)
     }
 }
 
@@ -263,7 +244,7 @@
     font-size: 3.5vw;
     text-align: center;
     margin: 1em;
-    text-shadow: 0px 0px 2px black, 2px 2px 5px white;
+    text-shadow: 0px 0px 2px black, 2px 2px 5px rgb(255, 255, 255);
 }
 
 .fade-in {

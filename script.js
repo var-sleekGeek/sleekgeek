@@ -76,8 +76,28 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  // Get form values
   const name = document.getElementById('name').value;
+
+  if (contactForm.submit()) {
+    // Show success message
+    alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+
+   // Reset form
+    contactForm.reset();
+} else {
+  alert(`There was an issue sending your message, please try again`);
+};
+
+});
+
+// Form submission
+//const contactForm = document.getElementById('contactForm');
+
+//contactForm.addEventListener('submit', (e) => {
+  //e.preventDefault();
+
+  // Get form values
+  //const name = document.getElementById('name').value;
   // const email = document.getElementById('email').value;
   // const service = document.getElementById('service').value;
   // const budget = document.querySelector('input[name="budget"]:checked').value;
@@ -87,11 +107,11 @@ contactForm.addEventListener('submit', (e) => {
   // console.log({ name, email, service, budget, message });
 
   // Show success message
-  alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+  //alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
 
   // Reset form
-  contactForm.reset();
-});
+  //contactForm.reset();
+//});
 
 // Smooth scrolling for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

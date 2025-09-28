@@ -14,60 +14,60 @@ window.addEventListener("resize", adjustBanner);
 
 
 function toggleMenu() {
-      const navLinks = document.getElementById('navLinks');
-      navLinks.classList.toggle('active');
-    }
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
 
 // Form Validation
 
 document.addEventListener("DOMContentLoaded", function () {
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const serviceSelect = document.getElementById("service");
-    const messageInput = document.getElementById("message");
-    const agreeCheckbox = document.getElementById("agree");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const serviceSelect = document.getElementById("service");
+  const messageInput = document.getElementById("message");
+  const agreeCheckbox = document.getElementById("agree");
 
-    nameInput.addEventListener("input", () => {
-        const error = document.getElementById("nameError");
-        if (nameInput.value.trim() === "") {
-            error.textContent = "Name is required.";
-        } else {
-            error.textContent = "";
-        }
-    });
+  nameInput.addEventListener("input", () => {
+    const error = document.getElementById("nameError");
+    if (nameInput.value.trim() === "") {
+      error.textContent = "Name is required.";
+    } else {
+      error.textContent = "";
+    }
+  });
 
-    emailInput.addEventListener("input", () => {
-        const error = document.getElementById("emailError");
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(emailInput.value.trim())) {
-            error.textContent = "Enter a valid email.";
-        } else {
-            error.textContent = "";
-        }
-    });
+  emailInput.addEventListener("input", () => {
+    const error = document.getElementById("emailError");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailInput.value.trim())) {
+      error.textContent = "Enter a valid email.";
+    } else {
+      error.textContent = "";
+    }
+  });
 
-    serviceSelect.addEventListener("change", () => {
-        const error = document.getElementById("serviceError");
-        if (serviceSelect.value === "") {
-            error.textContent = "Please select a service.";
-        } else {
-            error.textContent = "";
-        }
-    });
+  serviceSelect.addEventListener("change", () => {
+    const error = document.getElementById("serviceError");
+    if (serviceSelect.value === "") {
+      error.textContent = "Please select a service.";
+    } else {
+      error.textContent = "";
+    }
+  });
 
-    messageInput.addEventListener("input", () => {
-        const error = document.getElementById("messageError");
-        if (messageInput.value.trim() === "") {
-            error.textContent = "Project details are required.";
-        } else {
-            error.textContent = "";
-        }
-    });
+  messageInput.addEventListener("input", () => {
+    const error = document.getElementById("messageError");
+    if (messageInput.value.trim() === "") {
+      error.textContent = "Project details are required.";
+    } else {
+      error.textContent = "";
+    }
+  });
 
-    agreeCheckbox.addEventListener("change", () => {
-        const error = document.getElementById("agreeError");
-        error.textContent = agreeCheckbox.checked ? "" : "You must agree to the privacy policy.";
-    });
+  agreeCheckbox.addEventListener("change", () => {
+    const error = document.getElementById("agreeError");
+    error.textContent = agreeCheckbox.checked ? "" : "You must agree to the privacy policy.";
+  });
 });
 
 // Form submission
@@ -82,11 +82,11 @@ contactForm.addEventListener('submit', (e) => {
     // Show success message
     alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
 
-   // Reset form
+    // Reset form
     contactForm.reset();
-} else {
-  alert(`There was an issue sending your message, please try again`);
-};
+  } else {
+    alert(`There was an issue sending your message, please try again`);
+  };
 
 });
 
@@ -94,23 +94,23 @@ contactForm.addEventListener('submit', (e) => {
 //const contactForm = document.getElementById('contactForm');
 
 //contactForm.addEventListener('submit', (e) => {
-  //e.preventDefault();
+//e.preventDefault();
 
-  // Get form values
-  //const name = document.getElementById('name').value;
-  // const email = document.getElementById('email').value;
-  // const service = document.getElementById('service').value;
-  // const budget = document.querySelector('input[name="budget"]:checked').value;
-  // const message = document.getElementById('message').value;
+// Get form values
+//const name = document.getElementById('name').value;
+// const email = document.getElementById('email').value;
+// const service = document.getElementById('service').value;
+// const budget = document.querySelector('input[name="budget"]:checked').value;
+// const message = document.getElementById('message').value;
 
-  // // Here you would typically send this data to a server
-  // console.log({ name, email, service, budget, message });
+// // Here you would typically send this data to a server
+// console.log({ name, email, service, budget, message });
 
-  // Show success message
-  //alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+// Show success message
+//alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
 
-  // Reset form
-  //contactForm.reset();
+// Reset form
+//contactForm.reset();
 //});
 
 // Smooth scrolling for navigation

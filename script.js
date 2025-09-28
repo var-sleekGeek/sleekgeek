@@ -76,17 +76,69 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const name = document.getElementById('name').value;
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const serviceSelect = document.getElementById("service");
+  const messageInput = document.getElementById("message");
+  const agreeCheckbox = document.getElementById("agree");
+  const errors = false;
 
-  if (contactForm.submit()) {
-    // Show success message
-    alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+  // Validate all fields before submission
 
-    // Reset form
-    contactForm.reset();
+  const nameError = document.getElementById("nameError");
+  if (nameInput.value.trim() === "") {
+    nameError.textContent = "Name is required.";
+    errors = true;
   } else {
-    alert(`There was an issue sending your message, please try again`);
-  };
+    nameError.textContent = "";
+  }
+
+  const emailError = document.getElementById("emailError");
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(emailInput.value.trim())) {
+    emailError.textContent = "Enter a valid email.";
+    errors = true;
+  } else {
+    emailError.textContent = "";
+  }
+
+  const serviceError = document.getElementById("serviceError");
+  if (serviceSelect.value === "") {
+    serviceError.textContent = "Please select a service.";
+    errors = true;
+  } else {
+    serviceError.textContent = "";
+  }
+
+  const messageError = document.getElementById("messageError");
+  if (messageInput.value.trim() === "") {
+    messageError.textContent = "Project details are required.";
+    errors = true;
+  } else {
+    messageError.textContent = "";
+  }
+
+  const agreeError = document.getElementById("agreeError");
+  if (!agreeCheckbox.checked) {
+    agreeError.textContent = "You must agree to the privacy policy.";
+    errors = true;
+  } else {
+    agreeError.textContent = "";
+  }
+
+  if (errors == false) {
+    contactForm.submit();
+  }
+
+  // if (contactForm.submit()) {
+  // Show success message
+  // alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+
+  // Reset form
+  //   contactForm.reset();
+  // } else {
+  //   alert(`There was an issue sending your message, please try again`);
+  // };
 
 });
 

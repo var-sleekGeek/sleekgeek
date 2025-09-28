@@ -79,6 +79,7 @@ contactForm.addEventListener('submit', (e) => {
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
   const serviceSelect = document.getElementById("service");
+  const budgetSelect = document.querySelector('input[name="budget"]:checked');
   const messageInput = document.getElementById("message");
   const agreeCheckbox = document.getElementById("agree");
   const errors = false;
@@ -110,6 +111,14 @@ contactForm.addEventListener('submit', (e) => {
     serviceError.textContent = "";
   }
 
+  const budgetError = document.getElementById("budgetError");
+  if (!budgetSelect) {
+    budgetError.textContent = "Please select a your budget.";
+    errors = true;
+  } else {
+    serviceError.textContent = "";
+  }
+
   const messageError = document.getElementById("messageError");
   if (messageInput.value.trim() === "") {
     messageError.textContent = "Project details are required.";
@@ -130,40 +139,7 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.submit();
   }
 
-  // if (contactForm.submit()) {
-  // Show success message
-  // alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
-
-  // Reset form
-  //   contactForm.reset();
-  // } else {
-  //   alert(`There was an issue sending your message, please try again`);
-  // };
-
 });
-
-// Form submission
-//const contactForm = document.getElementById('contactForm');
-
-//contactForm.addEventListener('submit', (e) => {
-//e.preventDefault();
-
-// Get form values
-//const name = document.getElementById('name').value;
-// const email = document.getElementById('email').value;
-// const service = document.getElementById('service').value;
-// const budget = document.querySelector('input[name="budget"]:checked').value;
-// const message = document.getElementById('message').value;
-
-// // Here you would typically send this data to a server
-// console.log({ name, email, service, budget, message });
-
-// Show success message
-//alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
-
-// Reset form
-//contactForm.reset();
-//});
 
 // Smooth scrolling for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

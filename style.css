@@ -58,7 +58,7 @@
 .header {
   position: relative;
   width: 100%;
-  height: auto; /* or whatever height your banner needs */
+  height: auto;
   overflow: hidden;
 }
 
@@ -274,7 +274,3 @@
 #azul {
   padding: 40px;
 }
-
-/* #daycareContent {
-  z-index: 1;
-} */

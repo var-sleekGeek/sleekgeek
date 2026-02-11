@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if (isset($_POST["submit"])) {
 
     // Sanitize inputs
     $full_name = htmlspecialchars(trim($_POST["full_name"]));

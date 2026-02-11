@@ -8498,99 +8498,44 @@
 
                             </div>
 
-                            <label for="budget" class="block text-gray-200 mb-2">Project Budget</label>
-                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-                                <div>
+                            <div>
+                                <label for="message" class="block text-gray-200 mb-2">Project Details</label>
+                                <textarea id="message" rows="5" name="details"
+                                    class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
+                                    placeholder="Tell me about your project..." required></textarea>
+                                <span id="messageError" class="text-red-500 text-sm mt-1 block"></span>
 
-                                    <label for="budget0"
-                                        class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-80 transition duration-300"><input
-                                            type="radio" name="budget" id="budget0" value="under1k" class="hidden peer"
-                                            required>
-                                        Under $1k
-                                    </label>
-                                </div>
-                                <div>
+                            </div>
 
-                                    <label for="budget1"
-                                        class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300"><input
-                                            type="radio" name="budget" id="budget1" value="1k-5k" class="hidden peer"
-                                            required>
-                                        $1k-$5k
-                                    </label>
-                                </div>
-                                <div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="tos" name="tos"
+                                    class="w-4 h-4 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
+                                    required>
 
-                                    <label for="budget2"
-                                        class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300"><input
-                                            type="radio" name="budget" id="budget2" value="5k-10k" class="hidden peer">
-                                        $5k-$10k
-                                    </label>
-                                </div>
-                                <div>
+                                <label for="tos" class="ml-2 text-sm text-gray-200">I agree to the <a href="/tos.html"
+                                        target="_blank" class="text-cyan-400 hover:underline"
+                                        aria-label="Read our Terms of Service page to learn more. ">Terms of
+                                        Service</a></label><span id="tosError"
+                                    class="text-red-500 text-sm mt-1 block"></span>
+                                <br>
+                                <input type="checkbox" id="agree" name="agreement"
+                                    class="w-4 h-4 ml-2 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
+                                    required>
 
-                                    <label for="budget3"
-                                        class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300"><input
-                                            type="radio" name="budget" id="budget3" value="10k-20k" class="hidden peer">
-                                        $10k-$20k
-                                    </label>
-                                </div>
-                                <div>
-
-                                    <label for="budget4"
-                                        class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300"><input
-                                            type="radio" name="budget" id="budget4" value="20k+" class="hidden peer">
-                                        $20k+
-                                    </label>
-                                </div>
-                                <div>
-
-                                    <label for="budget5"
-                                        class="block text-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 cursor-pointer peer-checked:border-cyan-500 peer-checked:bg-cyan-900 peer-checked:bg-opacity-20 transition duration-300"><input
-                                            type="radio" name="budget" id="budget5" value="Unknown/TBD"
-                                            class="hidden peer">
-                                        Unknown/TBD
-                                    </label>
-                                </div>
-                            </div><span id="budgetError" class="text-red-500 text-sm mt-1 block"></span>
-
-                    </div> -->
-
-                    <div>
-                        <label for="message" class="block text-gray-200 mb-2">Project Details</label>
-                        <textarea id="message" rows="5" name="details"
-                            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
-                            placeholder="Tell me about your project..." required></textarea>
-                        <span id="messageError" class="text-red-500 text-sm mt-1 block"></span>
-
+                                <label for="agreement" class="ml-2 text-sm text-gray-200">I agree to the <a
+                                        href="/privacy.html" target="_blank" class="text-cyan-400 hover:underline"
+                                        aria-label="Read our privacy page to learn more. ">Privacy
+                                        Policy</a></label><span id="agreeError"
+                                    class="text-red-500 text-sm mt-1 block"></span>
+                                <input type="hidden" name="_template" value="table">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-green-600 hover:bg-purple-800 text-black hover:text-white px-6 py-4 rounded-lg font-medium transition duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
                     </div>
-
-                    <div class="flex items-center">
-                        <input type="checkbox" id="tos" name="tos"
-                            class="w-4 h-4 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
-                            required>
-
-                        <label for="tos" class="ml-2 text-sm text-gray-200">I agree to the <a href="/tos.html"
-                                target="_blank" class="text-cyan-400 hover:underline"
-                                aria-label="Read our Terms of Service page to learn more. ">Terms of
-                                Service</a></label><span id="tosError" class="text-red-500 text-sm mt-1 block"></span>
-                        <br>
-                        <input type="checkbox" id="agree" name="agreement"
-                            class="w-4 h-4 ml-2 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
-                            required>
-
-                        <label for="agreement" class="ml-2 text-sm text-gray-200">I agree to the <a href="/privacy.html"
-                                target="_blank" class="text-cyan-400 hover:underline"
-                                aria-label="Read our privacy page to learn more. ">Privacy
-                                Policy</a></label><span id="agreeError" class="text-red-500 text-sm mt-1 block"></span>
-                        <input type="hidden" name="_template" value="table">
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-green-600 hover:bg-purple-800 text-black hover:text-white px-6 py-4 rounded-lg font-medium transition duration-300 transform hover:scale-105">
-                        Send Message
-                    </button>
-                    </form>
                 </div>
-            </div>
             </div>
         </section>
     </main>

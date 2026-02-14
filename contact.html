@@ -15,19 +15,18 @@
 <body class="bg-black text-gray-100 font-sans">
     <!-- Navigation -->
     <nav id="navbar" class="navbar bg-black">
-        <a href="#" class="logo">Sleek Geek</a>
+        <a href="/index.html" class="logo">Sleek Geek</a>
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div class="nav-links" id="navLinks">
-            <a class="nav-link" href="#home" aria-label="Navigational link to the top of the page">Home</a>
-            <a class="nav-link" href="#about" aria-label="Navigational link to the about section of the page">About</a>
-            <a class="nav-link" href="#services"
-                aria-label="Navigational link to the services section of the page">Services</a>
-            <a class="nav-link" href="#contact"
-                aria-label="Navigational link to the contact form of the page">Contact</a>
+            <a class="nav-link" href="/index.html" aria-label="Navigational link to the top of the page">Home</a>
+            <a class="nav-link" href="/index.html#about" aria-label="Navigational link to the about section of the page">About</a>
+            <a class="nav-link" href="/index.html#services" aria-label="Navigational link to the services section of the page">Services</a>
+            <a class="nav-link" href="/pricing.html" aria-label="Navigational link to the pricing page">Pricing</a>
+            <a class="nav-link" href="/contact.html" aria-label="Navigational link to the contact form of the page">Contact</a>
             <!-- <a class="nav-link" href="/community.html" aria-label="Navigational link to the socials page">Socials</a> -->
         </div>
     </nav>
@@ -8136,7 +8135,7 @@
 
     <main>
         <!-- Contact Section -->
-        <section id="contact" class="py-20">
+        <section id="contact" class="py-20 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <div class="text-center mb-16 fade-in">
@@ -8145,24 +8144,31 @@
                         <p class="text-gray-200 max-w-2xl mx-auto">Ready to start your project? Fill out the form below
                             and I'll get back to you within 24 hours.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-xl p-8 md:p-12 border border-gray-700 fade-in">
-                        <form id="contactForm" class="space-y-6" action="/send-email.php" method="POST">
 
-                            <!-- Full Name -->
-                            <label for="full_name" class="block text-gray-200 mb-2">Full Name</label>
-                            <input type="text" id="full_name" name="full_name"
-                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
-                                placeholder="John Doe" required><span id="nameError"
-                                class="text-red-500 text-sm mt-1 block"></span>
+                    <div class="bg-black rounded-xl p-8 md:p-12 border border-purple-700 fade-in">
+                        <form id="contactForm" class="space-y-6"
+                            action="https://formsubmit.co/49d70cb4202c241f16a88267972d942c" method="POST">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-200 mb-2">Full Name</label>
+                                    <input type="text" id="name" name="name"
+                                        class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
+                                        placeholder="John Doe" required><span id="nameError"
+                                        class="text-red-500 text-sm mt-1 block"></span>
 
-                            <!-- Email Address -->
-                            <label for="email" class="block text-gray-200 mb-2">Email Address</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
-                                placeholder="john@example.com" required><span id="emailError"
-                                class="text-red-500 text-sm mt-1 block"></span>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-200 mb-2">Email Address</label>
+                                    <input type="email" id="email" name="email"
+                                        class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
+                                        placeholder="john@example.com" required><span id="emailError"
+                                        class="text-red-500 text-sm mt-1 block"></span>
+                                    <input type="hidden" name="_autoresponse"
+                                        value="Thanks for reaching out to Sleek Geek! We appreciate your interest in our sevices and will be in touch shortly.">
 
-                            <!-- Service Needed -->
+                                </div>
+                            </div>
+
                             <div>
                                 <label for="service" class="block text-gray-200 mb-2">Service Needed</label>
                                 <select onfocus="this.size=5;" onblur="this.size=0;" onchange="this.size=1; this.blur()"
@@ -8171,7 +8177,6 @@
                                     required>
                                     <option value="" disabled selected>Select a service</option>
                                     <option value="web-dev">Web Development</option>
-                                    <!-- <option value="app-dev">App Development</option> -->
                                     <option value="design">UI/UX Design</option>
                                     <option value="consultation">Consultation</option>
                                     <option value="other">Other</option>
@@ -8179,7 +8184,6 @@
 
                             </div>
 
-                            <!-- Project Budget -->
                             <div>
                                 <label for="budget" class="block text-gray-200 mb-2">Project Budget</label>
                                 <select onfocus="this.size=6;" onblur="this.size=0;" onchange="this.size=1; this.blur()"
@@ -8196,45 +8200,41 @@
 
                             </div>
 
-                            <!-- Project Details -->
                             <div>
-                                <label for="details" class="block text-gray-200 mb-2">Project Details</label>
-                                <textarea id="details" rows="5" name="details"
+                                <label for="message" class="block text-gray-200 mb-2">Project Details</label>
+                                <textarea id="message" rows="5" name="details"
                                     class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 input-field focus:outline-none focus:border-cyan-500 transition duration-300"
-                                    placeholder="Tell me about your project..." required></textarea><span
-                                    id="detailsError" class="text-red-500 text-sm mt-1 block"></span>
+                                    placeholder="Tell me about your project..." required></textarea>
+                                <span id="messageError" class="text-red-500 text-sm mt-1 block"></span>
+
                             </div>
 
-                            <!-- Agreements -->
                             <div class="flex items-center">
-                                <input type="checkbox" id="agree_terms" name="agree_terms"
+                                <input type="checkbox" id="tos" name="tos"
                                     class="w-4 h-4 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
                                     required>
 
-                                <label for="agree_terms" class="ml-2 text-sm text-gray-200">I agree to the <a
-                                        href="/tos.html" target="_blank" class="text-cyan-400 hover:underline"
+                                <label for="tos" class="ml-2 text-sm text-gray-200">I agree to the <a href="/tos.html"
+                                        target="_blank" class="text-cyan-400 hover:underline"
                                         aria-label="Read our Terms of Service page to learn more. ">Terms of
                                         Service</a></label><span id="tosError"
                                     class="text-red-500 text-sm mt-1 block"></span>
                                 <br>
-                                <input type="checkbox" id="agree_privacy" name="agree_privacy"
+                                <input type="checkbox" id="agree" name="agreement"
                                     class="w-4 h-4 ml-2 bg-gray-900 border border-gray-700 rounded focus:ring-cyan-500 focus:ring-offset-gray-800"
                                     required>
 
-                                <label for="agree_privacy" class="ml-2 text-sm text-gray-200">I agree to the <a
+                                <label for="agreement" class="ml-2 text-sm text-gray-200">I agree to the <a
                                         href="/privacy.html" target="_blank" class="text-cyan-400 hover:underline"
-                                        aria-label="Read our privacy page to learn more. ">privacy
-                                        policy</a></label><span id="agreeError"
+                                        aria-label="Read our privacy page to learn more. ">Privacy
+                                        Policy</a></label><span id="agreeError"
                                     class="text-red-500 text-sm mt-1 block"></span>
                                 <input type="hidden" name="_template" value="table">
                             </div>
-
-                            <!-- Submit -->
                             <button type="submit"
                                 class="w-full bg-green-600 hover:bg-purple-800 text-black hover:text-white px-6 py-4 rounded-lg font-medium transition duration-300 transform hover:scale-105">
                                 Send Message
                             </button>
-
                         </form>
                     </div>
                 </div>
@@ -8243,7 +8243,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+    <footer class="border-t border-gray-800 py-12">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">

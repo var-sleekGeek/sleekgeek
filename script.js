@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
   const serviceSelect = document.getElementById("service");
+  const budgetSelect = document.getElementById("budget");
   const messageInput = document.getElementById("message");
   const agreeCheckbox = document.getElementById("agree");
 
@@ -55,6 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  budgetSelect.addEventListener("change", () => {
+    const error = document.getElementById("budgetError");
+    if (budgetSelect.value === "") {
+      error.textContent = "Please select a your budget.";
+    } else {
+      error.textContent = "";
+    }
+  });
+
   messageInput.addEventListener("input", () => {
     const error = document.getElementById("messageError");
     if (messageInput.value.trim() === "") {
@@ -79,7 +89,7 @@ contactForm.addEventListener('submit', (e) => {
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
   const serviceSelect = document.getElementById("service");
-  const budgetSelect = document.querySelector('input[name="budget"]:checked');
+  const budgetSelect = document.getElementById("budget");
   const messageInput = document.getElementById("message");
   const agreeCheckbox = document.getElementById("agree");
   const errors = false;

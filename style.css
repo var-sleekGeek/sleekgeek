@@ -32,7 +32,14 @@
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #662d91, #32cd32);
+  background: linear-gradient(90deg, #e600ff, #32cd32);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.reverse-gradient-text {
+  background: linear-gradient(90deg, #32cd32, #e600ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -83,20 +90,20 @@
   background-color: #162c38;
   padding: 0.5rem 1rem;
   z-index: 1000;
-  height: 3rem;
+  height: 3.5rem;
 }
 
 .navbar a {
   text-decoration: none;
   padding: 0.5rem;
-  font-size: 17px;
+  font-size: 20px;
   border-radius: 100%;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .nav-links {
   display: flex;
-  background: linear-gradient(to right, #32cd32, #783ea4);
+  background: linear-gradient(to right, #32cd32, #e600ff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -104,7 +111,7 @@
 
 .logo {
   display: flex;
-  background: linear-gradient(to right, #783ea4, #32cd32);
+  background: linear-gradient(to right, #e600ff, #32cd32);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -276,7 +283,3 @@
 }
 
 /* Contact Form */
-
-option:hover {
-  background-color: #783ea4;
-}

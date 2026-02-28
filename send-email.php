@@ -2,7 +2,7 @@
 if (isset($_POST["submit"])) {
 
     // Sanitize inputs
-    $full_name = htmlspecialchars(trim($_POST["full_name"]));
+    $full_name = htmlspecialchars(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $service = htmlspecialchars(trim($_POST["service"]));
     $budget = htmlspecialchars(trim($_POST["budget"]));

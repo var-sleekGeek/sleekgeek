@@ -1,71 +1,191 @@
-<section id="about" class="py-20 mb-14">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about SleekGeek, a digital studio focused on thoughtful web design, accessibility, and clean, maintainable code. Built with care, clarity, and long‑term thinking.">
+    <meta name="author" content="Sleek Geek">
+    <title>About SleekGeek | Thoughtful, Accessible Digital Design</title>
+    <link rel="canonical" href="https://www.sleekgeek.ca">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="bg-black text-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar bg-black">
+        <a href="#" class="logo">Sleek Geek</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a class="nav-link" href="/index.html" aria-label="Navigational link to the top of the page">Home</a>
+            <a class="nav-link" href="/about.html"
+                aria-label="Navigational link to the about section of the page">About</a>
+            <a class="nav-link" href="/services.html"
+                aria-label="Navigational link to the services section of the page">Services</a>
+            <a class="nav-link" href="/pricing.html"
+                aria-label="Navigational link to the pricing page of the website">Pricing</a>
+            <a class="nav-link" href="/contact.html"
+                aria-label="Navigational link to the contact form of the page">Contact</a>
+            <!-- <a class="nav-link" href="/community.html" aria-label="Navigational link to the socials page">Socials</a> -->
+        </div>
+    </nav>
+
+    <!-- Main Page -->
+
+    <main>
+        <section id="about" class="py-20 mb-8">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/3 mb-10 md:mb-0 fade-in">
                         <div class="relative">
                             <img src="/images/sleekGeekThumbnailv5.png" alt="Sleek Geek Web Design thumbnail image"
-                                class="rounded-lg shadow-xl w-full max-w-md border border-gray-700" loading="lazy">
+                                class="rounded-lg shadow-xl w-full max-w-md" loading="lazy">
                         </div>
                     </div>
                     <div class="md:w-2/3 md:pl-12 fade-in">
-                        <h2 class="text-4xl md:text-5xl font-bold mb-6">About <span class="gradient-text">Sleek
+                        <h1 class="text-4xl md:text-7xl font-bold my-10 py-10">About <span class="gradient-text">Sleek
                                 Geek</span>
-                        </h2>
-                        <h3 class="text-3xl font-bold mb-3">A Thoughtful Approach to Digital Work</h3>
-                        <p class="text-gray-200 mb-4">Sleek Geek is a creative web development and branding studio built
+                        </h1>
+                        <p class="text-gray-200 mb-8 text-xl md:text-2xl sm:clear-right">Sleek Geek is a creative web
+                            development and branding
+                            studio built
                             on one simple belief: digital experiences should feel as good as they look. We blend clean
-                            design, thoughtful storytelling, and technical mastery to create websites and brands that
-                            feel intuitive, expressive, and deeply human.</p>
-                        <p class="text-gray-200 mb-4">Founded by Paul, a developer and designer with a passion for
+                            design, thoughtful storytelling, and technical knowledge to create websites and brands that
+                            feel intuitive, expressive, and relatable to your audience.</p>
+                        <p class="text-gray-200 mb-8 text-xl md:text-2xl">Founded by Paul, a developer and designer with
+                            a passion
+                            for
                             elegant systems and meaningful experiences, Sleek Geek brings together creativity and
                             clarity. Every project is approached like a collaboration — a chance to understand your
                             vision, refine it with intention, and build something that truly reflects who you are.</p>
-                        <p class="text-gray-200 mb-4"><strong>We don’t just make websites.</strong><br>
+                        <p class="text-gray-200 mb-12 text-xl md:text-2xl"><strong><span
+                                    class="text-2xl md:text-3xl reverse-gradient-text">We
+                                    don’t just make websites</span></strong><br>
                             We craft digital environments that support growth, spark curiosity, and leave a lasting
                             impression.</p>
-                        <p class="text-gray-200 mb-6">Whether you’re launching a new brand, refreshing your online
+                        <p class="text-gray-200 mb-4 text-xl md:text-2xl">Whether you’re launching a new brand,
+                            refreshing your
+                            online
                             presence, or building something entirely unique, Sleek Geek is here to help you bring your
                             ideas to life with precision, personality, and purpose.</p>
-
-                        <div class="grid grid-cols-2 gap-4 mb-8">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="wavy">
+        <section id="work-with" class="pb-14 mb-14">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="fade-in max-w-6xl mx-auto">
+                        <h2 class="text-3xl md:text-5xl font-bold my-14 py-14 text-center">A Considered Approach to
+                            <span class="gradient-text">Digital Work</span>
+                        </h2>
+                        <p class="text-gray-200 mb-8 text-xl md:text-2xl">We believe the best digital experiences come
+                            from slowing
+                            down before speeding up. Rather than jumping straight into visuals or features, we take time
+                            to understand the context — your goals, your audience, and the constraints you’re working
+                            within.</p>
+                        <p class="text-gray-200 mb-8 text-xl md:text-2xl">That clarity informs every decision that
+                            follows, from
+                            layout and interaction to structure and code. The result is work that feels intentional,
+                            cohesive, and grounded in reality — not trends.</p>
+                        <h2 class="text-3xl md:text-5xl font-bold my-10 py-10 text-center">What It’s Like to Work With
+                            <span class="reverse-gradient-text">Sleek Geek</span></h2>
+                        <p class="text-gray-200 mb-8 text-xl md:text-2xl">Working with Sleek Geek is a collaborative and
+                            transparent
+                            process. We value clear communication, thoughtful feedback, and shared understanding at
+                            every stage of a project.</p>
+                        <div
+                            class="bg-gray-900 rounded-xl my-14 p-8 border border-gray-500 card-hover w-1/2 mx-auto text-center">
+                            <p class="mb-8 text-xl md:text-2xl"><span class="gradient-text">What you can expect:</span>
+                            </p>
+                            <ul class="text-gray-300 text-lg space-y-2 pl-4">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-purple-500 mr-4 text-2xl"></i> Careful listening before
+                                    solutions are proposed.
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-purple-500 mr-4 text-2xl"></i> Honest guidance rooted in
+                                    experience,
+                                    not hype.
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-purple-500 mr-4 text-2xl"></i> Design and development
+                                    choices
+                                    explained clearly.
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-purple-500 mr-4 text-2xl"></i> A focus on long-term
+                                    usability, not
+                                    quick wins.
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="text-gray-200 mb-16 text-xl md:text-2xl">We’re selective about the work we take on,
+                            because doing
+                            things properly matters. If you value clarity, care, and thoughtful craftsmanship, you’ll
+                            likely feel at home here.</p>
+                        <h2 class="text-3xl md:text-5xl font-bold my-10 py-10 text-center">Our Development <span
+                                class="reverse-gradient-text">Values</span></h2>
+                        <div
+                            class="grid grid-cols-2 gap-12 mb-8 bg-gray-900 rounded-xl p-8 border border-gray-500 card-hover w-2/3 mx-auto">
                             <div class="flex items-center">
                                 <div class="bg-green-700 bg-opacity-40 p-3 rounded-full mr-4">
-                                    <i class="fas fa-code text-purple-500"></i>
+                                    <i class="fas fa-code text-purple-500 text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold">Clean Code</h3>
-                                    <p class="text-sm text-gray-200">Readable, maintainable, efficient</p>
+                                    <h3 class="font-bold text-2xl">Clean Code</h3>
+                                    <p class="text-lg text-gray-200">Readable, maintainable, efficient</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
                                 <div class="bg-green-700 bg-opacity-40 p-3 rounded-full mr-4">
-                                    <i class="fas fa-paint-brush text-purple-500"></i>
+                                    <i class="fas fa-paint-brush text-purple-500 text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold">Beautiful Design</h3>
-                                    <p class="text-sm text-gray-200">Aesthetic & functional</p>
+                                    <h3 class="font-bold text-2xl">Beautiful Design</h3>
+                                    <p class="text-lg text-gray-200">Aesthetic & functional</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
                                 <div class="bg-green-700 bg-opacity-40 p-3 rounded-full mr-4">
-                                    <i class="fas fa-rocket text-purple-500"></i>
+                                    <i class="fas fa-rocket text-purple-500 text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold">Fast Performance</h3>
-                                    <p class="text-sm text-gray-200">Optimized for speed</p>
+                                    <h3 class="font-bold text-2xl">Fast Performance</h3>
+                                    <p class="text-lg text-gray-200">Optimized for speed</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
                                 <div class="bg-green-700 bg-opacity-40 p-3 rounded-full mr-4">
-                                    <i class="fas fa-shield-alt text-purple-500"></i>
+                                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold">Secure</h3>
-                                    <p class="text-sm text-gray-200">Built with security in mind</p>
+                                    <h3 class="font-bold text-2xl">Secure</h3>
+                                    <p class="text-lg text-gray-200">Built with security in mind</p>
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+                    </div>
+                    </div>
+        </section>
+        <hr class="wavy">
+        <section id="about-cta" class="py-14 my-14">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 pb-6">Ready to Start <span class="gradient-text">Your Project</span></h2>
+                <p class="text-lg md:text-xl text-gray-200 text-center max-w-3xl mx-auto">
+                    Whether you have a clear plan or are still shaping an idea, we’re always open to thoughtful conversations about meaningful digital work. Reach out to start a discussion and see if <span class="reverse-gradient-text">Sleek Geek</span> is the right fit for what you’re building.</p>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="text-center mt-8 max-w-1/2 mx-auto">
                         <a href="/contact.html"
                             class="inline-block border border-green-500 hover:bg-green-900 hover:bg-opacity-20 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105"
                             aria-label="Contact Sleek Geek to get started on your project">
@@ -73,5 +193,49 @@
                         </a>
                     </div>
                 </div>
-            </div>
         </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-2"><span class="gradient-text">Sleek Geek</span></div>
+                    <p class="text-gray-200">Crafting digital experiences that matter.</p>
+                </div>
+
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://github.com/var-sleekGeek" target="_blank"
+                        class="text-gray-300 hover:text-purple-500 transition duration-300"
+                        aria-label="Sleek Geek GitHub Profile">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/sleek-geek-web-design" target="_blank"
+                        class="text-gray-300 hover:text-purple-500 transition duration-300"
+                        aria-label="Sleek Geek LinkedIn Profile">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://x.com/sleekGeekWD" target="_blank"
+                        class="text-gray-300 hover:text-purple-500 transition duration-300"
+                        aria-label="Sleek Geek Twitter Profile">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sleekgeekwd/" target="_blank"
+                        class="text-gray-300 hover:text-purple-500 transition duration-300"
+                        aria-label="Sleek Geek Instagram Profile">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+
+                <div class="text-gray-200 text-sm">
+                    &copy; 2026 Sleek Geek. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

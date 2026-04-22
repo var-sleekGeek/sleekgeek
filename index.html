@@ -8219,7 +8219,31 @@
             </div>
         </section>
 
-        <hr class="wavy">
+        <!-- Keep semantic <hr>, but render a custom visual right after it -->
+        <hr class="sr-only" />
+
+        <svg class="wavy-hr" viewBox="0 0 400 60" preserveAspectRatio="none" role="separator"
+            aria-orientation="horizontal">
+            <defs>
+                <!-- A repeating gradient so it can “flow” continuously -->
+                <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="240" y2="0"
+                    spreadMethod="repeat">
+                    <stop offset="0%" stop-color="#7CFF00" /> <!-- lime -->
+                    <stop offset="50%" stop-color="#A855F7" /> <!-- purple -->
+                    <stop offset="100%" stop-color="#7CFF00" /> <!-- back to lime -->
+
+                    <!-- Slide the gradient to the right forever -->
+                    <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="240 0"
+                        dur="1.4s" repeatCount="indefinite" />
+                </linearGradient>
+            </defs>
+
+            <!-- Wavy path -->
+            <path
+                d="M0 30 C 10 20, 20 20, 30 30 S 50 40, 60 30 S 80 20, 90 30 S 110 40, 120 30 S 140 20, 150 30 S 170 40, 180 30 S 200 20, 210 30 S 230 40, 240 30 S 260 20, 270 30 S 290 40, 300 30 S 320 20, 330 30 S 350 40, 360 30 S 380 20, 390 30"
+                fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round" />
+        </svg>
+
 
         <!-- Services -->
         <section id="services" class="items-center pt-14 mb-14 mt-14 pb-14">
@@ -8366,8 +8390,30 @@
             </div>
         </section>
 
-        <hr class="wavy">
+        <!-- Keep semantic <hr>, but render a custom visual right after it -->
+        <hr class="sr-only" />
 
+        <svg class="wavy-hr" viewBox="0 0 400 60" preserveAspectRatio="none" role="separator"
+            aria-orientation="horizontal">
+            <defs>
+                <!-- A repeating gradient so it can “flow” continuously -->
+                <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="240" y2="0"
+                    spreadMethod="repeat">
+                    <stop offset="0%" stop-color="#7CFF00" /> <!-- lime -->
+                    <stop offset="50%" stop-color="#A855F7" /> <!-- purple -->
+                    <stop offset="100%" stop-color="#7CFF00" /> <!-- back to lime -->
+
+                    <!-- Slide the gradient to the right forever -->
+                    <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="240 0"
+                        dur="1.4s" repeatCount="indefinite" />
+                </linearGradient>
+            </defs>
+
+            <!-- Wavy path -->
+            <path
+                d="M0 30 C 10 20, 20 20, 30 30 S 50 40, 60 30 S 80 20, 90 30 S 110 40, 120 30 S 140 20, 150 30 S 170 40, 180 30 S 200 20, 210 30 S 230 40, 240 30 S 260 20, 270 30 S 290 40, 300 30 S 320 20, 330 30 S 350 40, 360 30 S 380 20, 390 30"
+                fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round" />
+        </svg>
         <!-- About Section -->
         <section id="about" class="py-20 mb-14">
             <div class="container mx-auto px-6">
@@ -8437,8 +8483,30 @@
             </div>
         </section>
 
-        <hr class="wavy">
+        <!-- Keep semantic <hr>, but render a custom visual right after it -->
+        <hr class="sr-only" />
 
+        <svg class="wavy-hr" viewBox="0 0 400 60" preserveAspectRatio="none" role="separator"
+            aria-orientation="horizontal">
+            <defs>
+                <!-- A repeating gradient so it can “flow” continuously -->
+                <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="240" y2="0"
+                    spreadMethod="repeat">
+                    <stop offset="0%" stop-color="#7CFF00" /> <!-- lime -->
+                    <stop offset="50%" stop-color="#A855F7" /> <!-- purple -->
+                    <stop offset="100%" stop-color="#7CFF00" /> <!-- back to lime -->
+
+                    <!-- Slide the gradient to the right forever -->
+                    <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="240 0"
+                        dur="1.4s" repeatCount="indefinite" />
+                </linearGradient>
+            </defs>
+
+            <!-- Wavy path -->
+            <path
+                d="M0 30 C 10 20, 20 20, 30 30 S 50 40, 60 30 S 80 20, 90 30 S 110 40, 120 30 S 140 20, 150 30 S 170 40, 180 30 S 200 20, 210 30 S 230 40, 240 30 S 260 20, 270 30 S 290 40, 300 30 S 320 20, 330 30 S 350 40, 360 30 S 380 20, 390 30"
+                fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round" />
+        </svg>
         <!-- Work Section -->
         <section id="work" class="py-20 bg-gray-950">
             <div class="container mx-auto px-6 py-5 bg-gray-950">
@@ -8481,8 +8549,30 @@
                     </div>
                 </div>
 
-                <hr class="wavy">
+                <!-- Keep semantic <hr>, but render a custom visual right after it -->
+                <hr class="sr-only" />
 
+                <svg class="wavy-hr" viewBox="0 0 400 60" preserveAspectRatio="none" role="separator"
+                    aria-orientation="horizontal">
+                    <defs>
+                        <!-- A repeating gradient so it can “flow” continuously -->
+                        <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="240" y2="0"
+                            spreadMethod="repeat">
+                            <stop offset="0%" stop-color="#7CFF00" /> <!-- lime -->
+                            <stop offset="50%" stop-color="#A855F7" /> <!-- purple -->
+                            <stop offset="100%" stop-color="#7CFF00" /> <!-- back to lime -->
+
+                            <!-- Slide the gradient to the right forever -->
+                            <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="240 0"
+                                dur="1.4s" repeatCount="indefinite" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Wavy path -->
+                    <path
+                        d="M0 30 C 10 20, 20 20, 30 30 S 50 40, 60 30 S 80 20, 90 30 S 110 40, 120 30 S 140 20, 150 30 S 170 40, 180 30 S 200 20, 210 30 S 230 40, 240 30 S 260 20, 270 30 S 290 40, 300 30 S 320 20, 330 30 S 350 40, 360 30 S 380 20, 390 30"
+                        fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round" />
+                </svg>
                 <h2 class="text-4xl md:text-5xl font-bold text-center mb-10 mt-16 pt-10">Built on <span
                         class="gradient-text">Clarity</span>, Care and <span class="reverse-gradient-text">Craft</span>
                 </h2>
@@ -8527,8 +8617,31 @@
             </div>
         </section>
 
-        <div class="mt-14">
-            <hr class="wavy clear-both">
+        <div id="wave">
+            <!-- Keep semantic <hr>, but render a custom visual right after it -->
+            <hr class="sr-only" />
+
+            <svg class="wavy-hr" viewBox="0 0 400 60" preserveAspectRatio="none" role="separator"
+                aria-orientation="horizontal">
+                <defs>
+                    <!-- A repeating gradient so it can “flow” continuously -->
+                    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="240" y2="0"
+                        spreadMethod="repeat">
+                        <stop offset="0%" stop-color="#7CFF00" /> <!-- lime -->
+                        <stop offset="50%" stop-color="#A855F7" /> <!-- purple -->
+                        <stop offset="100%" stop-color="#7CFF00" /> <!-- back to lime -->
+
+                        <!-- Slide the gradient to the right forever -->
+                        <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="240 0"
+                            dur="1.4s" repeatCount="indefinite" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Wavy path -->
+                <path
+                    d="M0 30 C 10 20, 20 20, 30 30 S 50 40, 60 30 S 80 20, 90 30 S 110 40, 120 30 S 140 20, 150 30 S 170 40, 180 30 S 200 20, 210 30 S 230 40, 240 30 S 260 20, 270 30 S 290 40, 300 30 S 320 20, 330 30 S 350 40, 360 30 S 380 20, 390 30"
+                    fill="none" stroke="url(#flow)" stroke-width="4" stroke-linecap="round" />
+            </svg>
         </div>
 
         <section id="finalCta" class="py-14">

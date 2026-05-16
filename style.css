@@ -146,7 +146,7 @@
 
 .logo {
   display: flex;
-  background: linear-gradient(to right, #7300ff, #32cd32);
+  background: linear-gradient(to right, #e600ff, #32cd32);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -312,14 +312,6 @@
     }
 }
 
-/* .wavy {
-  border: none;
-  height: 20px;
-  background: url("data:image/svg+xml,%3Csvg width='100%25' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%238b5cf6'/%3E%3Cstop offset='100%25' stop-color='%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10' fill='transparent' stroke='url(%23grad)' stroke-width='2'/%3E%3C/svg%3E") repeat-x;
-  background-size: 100px 20px;
-} */
-
-
 /* visually hidden helper for the semantic hr (optional if you keep role="separator" on SVG) */
 .sr-only {
   position: absolute;
@@ -356,3 +348,54 @@
 }
 
 /* Contact Form */
+
+/* Services Page */
+
+.stacking-slide {
+  height: 75vh;
+  width: 65%;
+  position: sticky;
+  top: 0;
+  padding: 3rem;
+  box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.stacking-slide:nth-child(0) {
+  background-color: #111827;
+  border: 3px solid #e600ff
+}
+
+.stacking-slide:nth-child(1) {
+  background-color: #111827;
+  border: 3px solid #32cd32
+}
+
+.stacking-slide:nth-child(2) {
+  background-color: #111827;
+  border: 3px solid #e600ff
+}
+
+.stacking-slide:nth-child(3) {
+  background-color: #111827;
+  border: 3px solid #32cd32
+}
+
+.stacking-slide:nth-child(4) {
+  background-color: #111827;
+  border: 3px solid #e600ff
+}
+
+.stacking-slide:nth-child(5) {
+  background-color: #111827;
+  border: 3px solid #32cd32
+}
+
+.stacking-slide:nth-child(6) {
+  background-color: #111827;
+  border: 3px solid #e600ff
+}

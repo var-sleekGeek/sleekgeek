@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible & Inclusive Design services from Sleek Geek — semantic HTML, WCAG audits, keyboard and screen reader support, color contrast, and inclusive UX." />
+    <meta name="author" content="Sleek Geek">
+    <title>Accessible & Inclusive Design | Sleek Geek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="bg-black text-gray-100 font-sans">
+    <nav id="navbar" class="navbar bg-black">
+        <a href="/index.html" class="logo">Sleek Geek</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link" href="/index.html#about">About</a>
+            <a class="nav-link" href="/index.html#services">Services</a>
+            <a class="nav-link" href="/pricing.html">Pricing</a>
+            <a class="nav-link" href="/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="top" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center fade-in">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-4">Accessible & Inclusive Design</h1>
+                    <p class="mb-4"><a href="/services.html#accessible-inclusive-design" class="text-purple-400 hover:underline">Back to Services</a></p>
+                    <p class="text-gray-300 max-w-3xl mx-auto mb-8">Design and build digital experiences that everyone can use — regardless of ability, device, or context.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto text-gray-300 space-y-6">
+                    <h2 class="text-2xl font-bold">What this service includes</h2>
+                    <p>Accessible & Inclusive Design is a combination of technical implementation and human-centered design. Services include semantic HTML structure, meaningful alt text and labels, keyboard navigation, ARIA where appropriate, color contrast and typography adjustments, form accessibility, and assistive-technology testing (screen readers, keyboard-only flows). The service also includes an accessibility audit against WCAG guidelines, prioritized remediation recommendations, and documentation so your team can maintain accessibility over time.</p>
+
+                    <h2 class="text-2xl font-bold">Why it matters</h2>
+                    <p>Accessibility is not only the right thing to do — it expands your audience, improves usability for everyone, and reduces legal and reputation risk. Accessible sites often have better performance and SEO, lower bounce rates, and higher conversion for users on slow connections or mobile devices. Making a product inclusive creates better experiences for more people and strengthens trust in your brand.</p>
+
+                    <h2 class="text-2xl font-bold">Why Sleek Geek is the right choice</h2>
+                    <p>Sleek Geek brings practical accessibility into every project rather than treating it as an afterthought. The team combines design sensitivity with engineering discipline: accessible patterns are implemented in clean, maintainable HTML/CSS and validated with automated checks and manual assistive-technology testing. Deliverables include an accessibility report, prioritized fixes, and developer-friendly documentation so accessibility is preserved as your product evolves.</p>
+
+                    <p class="mt-6">Interested in an accessibility audit or integrating inclusive design into your next release? <a href="/contact.html" class="gradient-text">Contact Sleek Geek</a> to start the conversation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold gradient-text mb-2">Sleek Geek</div>
+                    <p class="text-gray-200">Crafting digital experiences that matter.</p>
+                </div>
+
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://github.com/var-sleekGeek" target="_blank" class="text-gray-300 hover:text-purple-500"><i class="fab fa-github text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/company/sleek-geek-web-design" target="_blank" class="text-gray-300 hover:text-purple-500"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="https://x.com/sleekGeekWD" target="_blank" class="text-gray-300 hover:text-purple-500"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="https://www.instagram.com/sleekgeekwd/" target="_blank" class="text-gray-300 hover:text-purple-500"><i class="fab fa-instagram text-2xl"></i></a>
+                </div>
+
+                <div class="text-gray-200 text-sm">&copy; 2026 Sleek Geek. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

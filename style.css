@@ -351,19 +351,37 @@
 
 /* Services Page */
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.stacking-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .stacking-slide {
-  height: 75vh;
-  width: 65%;
+  width: min(90%, 900px);
   position: sticky;
   top: 0;
   padding: 3rem;
   box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.25);
   margin: auto;
+  height: auto;
+  max-height: none;
+  overflow: visible;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+@media (max-width: 940px) {
+  .stacking-slide {
+    position: static;
+    width: 100%;
+    padding: 1.5rem;
+  }
 }
+
 
 .stacking-slide:nth-child(0) {
   background-color: #111827;

@@ -361,14 +361,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .stacking-slide {
   width: min(90%, 900px);
   position: sticky;
   top: 0;
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.25);
   margin: auto;
   height: auto;

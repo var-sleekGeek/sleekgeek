@@ -19377,7 +19377,21 @@
           </div>
         </div>
       </section>
-      <div class="py-8 pr-6 flex justify-end">
+      <!-- Previous & Back to Top Button -->
+      <div class="py-8 px-6 flex justify-between items-center">
+        <a
+          href="#"
+          onclick="
+            window.history.back();
+            return false;
+          "
+          aria-label="Go to previous page"
+          class="text-gray-300 hover:text-purple-500 transition duration-300"
+          title="Go to previous page"
+        >
+          <i class="fas fa-arrow-left text-2xl text-purple-500"></i>
+          <span class="gradient-text text-xl">Previous</span>
+        </a>
         <a
           href="#"
           onclick="
@@ -19388,7 +19402,8 @@
           class="text-gray-300 hover:text-purple-500 transition duration-300"
           title="Back to top of page"
         >
-          <i class="fas fa-arrow-up text-2xl"></i>
+          <span class="reverse-gradient-text text-xl">Top</span>
+          <i class="fas fa-arrow-up text-2xl text-purple-500"></i>
         </a>
       </div>
     </main>

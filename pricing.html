@@ -206,6 +206,34 @@
                 </div>
             </div>
         </section>
+        <!-- Previous & Back to Top Button -->
+        <div class="py-8 px-6 flex justify-between items-center">
+          <a
+            href="#"
+            onclick="
+              window.history.back();
+              return false;
+            "
+            aria-label="Go to previous page"
+            class="text-gray-300 hover:text-purple-500 transition duration-300"
+            title="Go to previous page"
+          >
+            <i class="fas fa-arrow-left text-2xl text-purple-500"></i> <span class="gradient-text text-xl">Previous</span>
+          </a>
+          <a
+            href="#"
+            onclick="
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              return false;
+            "
+            aria-label="Back to top of page"
+            class="text-gray-300 hover:text-purple-500 transition duration-300"
+            title="Back to top of page"
+          >
+            <span class="reverse-gradient-text text-xl">Top</span>
+            <i class="fas fa-arrow-up text-2xl text-purple-500"></i>
+          </a>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="border-t border-gray-800 py-12">
